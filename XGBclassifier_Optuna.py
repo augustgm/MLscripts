@@ -140,7 +140,7 @@ param_dict['objective'] = 'binary:logistic'
 param_dict['eval_metric'] = 'auc'
 param_dict['nthread'] = -1
 
-pipeline = Pipeline([('model', base_model["model"](**param_dict, random_state=42))])
+pipeline = Pipeline([('model', XGBClassifier(**param_dict, random_state=42))])
 
 # Define the predictions list
 pred = pd.DataFrame(columns=['gene', "xgboost"])
