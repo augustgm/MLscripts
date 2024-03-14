@@ -6,7 +6,6 @@ import joblib
 import optuna
 import numpy as np
 import pandas as pd
-from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import RepeatedStratifiedKFold
 from xgboost import XGBClassifier
