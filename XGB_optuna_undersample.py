@@ -1,6 +1,7 @@
-###########################################################
-# Optimise XGBoost for Binary Classification using Optuna #
-###########################################################
+###################################################################
+#      Optimise XGBoost for Binary Classification using Optuna    #
+# Perform undersampling of the majority class using desired ratio #
+###################################################################
 import pickle
 import joblib
 import optuna
