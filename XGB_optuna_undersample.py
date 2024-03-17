@@ -2,11 +2,6 @@
 #      Optimise XGBoost for Binary Classification using Optuna    #
 # Perform undersampling of the majority class using desired ratio #
 ###################################################################
-#!pip uninstall scikit-learn --yes
-#!pip uninstall imblearn --yes
-#!pip install scikit-learn==1.2.2
-#!pip install imblearn
-
 import pickle
 import joblib
 import optuna
