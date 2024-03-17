@@ -170,7 +170,7 @@ pred = pd.DataFrame(columns=[sample_col, "pred_proba"])
 hout_ts_pred = pd.DataFrame(columns=[sample_col, "pred_proba"])
 
 # Loop over the cross-validation folds and predict with the best parameters
-for fold_id, train_idx, test_idx in enumerate(cv.split(X, y)):
+for fold_id, (train_idx, test_idx) in enumerate(cv.split(X, y)):
     model = XGBClassifier(**param_dict, random_state=42)
 
     # Split the data into train and test sets
